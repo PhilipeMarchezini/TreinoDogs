@@ -1,0 +1,19 @@
+.title {
+  font-size: 3rem;
+  font-family: var(--variavel1);
+  position: relative;
+  z-index: 99;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #ffbb11;
+  position: absolute;
+  bottom: 7px;
+  z-index: -1;
+  left: -5px;
+}

@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  color: #333;
+  --variavel: helvetica, arial, sans-serif;
+  --variavel1: 'Spectral', Georgia;
+  font-family: var(--variavel);
+  padding: 4rem 0;
+  height: 100vh;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--variavel);
+  color: #333;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
+
+.animacao {
+  transform: translateX(-20px);
+  animation: animaLeft 0.4s forwards;
+}
+
+@keyframes animaLeft {
+  to {
+    transform: translateX(0);
+  }
+}
+
+footer {
+  padding: 5rem;
+  background: #ffbb11;
+  text-align: center;
+}
